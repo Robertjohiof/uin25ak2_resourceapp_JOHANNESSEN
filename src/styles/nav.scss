@@ -1,0 +1,31 @@
+.faner {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto 0;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .faneKlikk {
+    flex: 1;
+    background-color: #2a324b;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  
+    &:hover {
+      background-color: #1e263a;
+      text-decoration: underline;
+    }
+  }
+  
+  .faneKlikk.active {
+    background-color: #fff;
+    color: #2a324b;
+  }
