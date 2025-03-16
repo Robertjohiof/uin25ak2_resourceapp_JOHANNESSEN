@@ -6,6 +6,7 @@ export default function Resources({ category }) {
   // Filtrerer innhold i forhold til valgt kategori
   const categoryResources = resources.filter((r) => r.category.toLowerCase() === category.toLowerCase());
 
+  //Vise feilmelding hvis det ikke er noe innhold
   if (categoryResources.length === 0) {
     return <p className="error-message">Her finnes det ikke noe innhold.</p>;
   }
